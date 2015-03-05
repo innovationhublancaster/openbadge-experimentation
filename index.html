@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Badge Test</title>
+</head>
+
+<body>
+<script src="https://backpack.openbadges.org/issuer.js"></script>
+
+
+<button onclick="issueBadge()">Issue Badge</button>
+  
+  
+
+
+
+<script>
+function issueBadge() {
+    console.log("js..");
+
+    var assertion = [
+    					
+    					'https://raw.githubusercontent.com/stennett10/ob/master/assert4.json'
+				    ];
+
+    OpenBadges.issue(assertion, function(errors,successes){
+    	console.log("errors:" + errors);
+
+    	console.log("successes:" + successes);
+    });	
+}
+</script>
+
+</body>
+</html>

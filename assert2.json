@@ -1,0 +1,14 @@
+{
+  "uid": "42155#2",
+  "recipient": {
+    "type": "email",
+    "hashed": false,
+    "identity": "stennett10@gmail.com"
+  },
+  "issuedOn": "2015-03-04T12:51:03.701Z",
+  "badge": "https://raw.githubusercontent.com/stennett10/ob/master/2.json",
+  "verify": {
+    "type": "hosted",
+    "url": "https://raw.githubusercontent.com/stennett10/ob/master/assert2.json"
+  }
+}

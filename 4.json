@@ -1,0 +1,7 @@
+{
+  "name": "Badge 4",
+  "description": "it worked!",
+  "image": "https://raw.githubusercontent.com/stennett10/ob/master/4.png",
+  "criteria": "http://badgelab.herokuapp.com/42155/criteria.txt",
+  "issuer": "https://raw.githubusercontent.com/stennett10/ob/master/issuer.json"
+}
