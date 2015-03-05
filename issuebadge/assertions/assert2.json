@@ -6,9 +6,9 @@
     "identity": "stennett10@gmail.com"
   },
   "issuedOn": "2015-03-04T12:51:03.701Z",
-  "badge": "https://raw.githubusercontent.com/stennett10/ob/master/2.json",
+  "badge": "https://raw.githubusercontent.com/innovationhublancaster/openbadge-experimentation/master/issuebadge/badge%20classes/2.json",
   "verify": {
     "type": "hosted",
-    "url": "https://raw.githubusercontent.com/stennett10/ob/master/assert2.json"
+    "url": "https://raw.githubusercontent.com/innovationhublancaster/openbadge-experimentation/master/issuebadge/assertions/assert2.json"
   }
 }
