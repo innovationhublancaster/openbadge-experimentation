@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Badge Display Test</title>
+  <script src="jquery-2.1.3.min.js"></script>
+</head>
+
+<body>
+
+<input id="email" type="text">
+<button onclick="convertEmail()">Issue Badge</button>
+  
+  
+<script>
+    function convertEmail(){
+        var email = document.getElementById('email').value;
+        var ID = $.post( "http://backpack.openbadges.org/displayer/convert/email " , {'email' : email}, function( data){
+        	console.log(data.email);
+        	console.log(data.userId);
+        })
+        JSON.parse(ID)
+        console.log(ID.email);
+    }
+</script>
+</body>
+</html>
