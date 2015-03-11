@@ -1,0 +1,91 @@
+@import "base";
+@import "badge";
+
+.settings-form {
+  @extend .badge-form;
+  .badge-label {
+    font-weight: bold;
+    width: 25%;
+    margin-right: 6%;
+  }
+  .badge-field {
+    width: $four-wide;
+  }
+  .submit-btn { margin-left: 0; }
+}
+
+.settings-notifications,
+.settings-privacy {
+  .badge-label {
+    width: $six-wide;
+    margin-bottom: 5px;
+  }
+}
+
+.crumbs {
+  padding-left: 0;
+  .crumb { display: inline; }
+  .active-crumb {
+    color: $gray;
+  }
+}
+
+.column,
+.column-wide {
+  position: relative;
+  .fa-arrow-circle-o-right {
+    position: absolute;
+    right: -7px;
+    top: 60px;
+    color: $gray;
+    background-color: white;
+  }
+  .admin-title {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .admin-options {
+    padding: 5px 0 5px 5px;
+    i {
+      margin-right: 10px;
+    }
+    a, i { color: $gray; }
+  }
+  .admin-options-selected {
+    background-color: $light-gray;
+    position: relative;
+    padding: 5px 0 5px 5px;
+
+    &:after {
+      content: "";
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 17px solid $light-gray;
+      position: absolute;
+      right: -17px;
+      top: 0;
+    }
+  }
+  .system-name {
+    color: $gray;
+    margin-top: 0;
+  }
+  ul { padding-left: 0; }
+}
+.column {
+  width: $two-wide;
+  border-right: 1px solid $light-gray;
+  margin-right: 20px;
+}
+.column-wide { width: $four-wide; }
+
+.hidden {
+  display: none;
+}
+
+.loading-header {
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block head %}
+  <link rel="stylesheet" id="tabzilla-css" href="//www.mozilla.org/tabzilla/media/css/tabzilla.css">
+  {{ super() }}
+{% endblock %}
+
+{% block header %}
+  <a href="http://www.mozilla.org" id="tabzilla" class="container">Mozilla</a>
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <section class="first">
+    <div class="container">
+      <div class="text left">
+        <h1>Badges Made Simple.</h1>
+        <p>
+          Welcome! Badgekit helps you create, assess and issue badges. The new platform easily connects with your website and services so you can bring Open Badges to your community.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container clearfix">
+    <div class="home-get-started clearfix cb">
+      <h1>Get started making badges</h1>
+      <div class="placeholder-new-template">
+        <section class="badge-new badge-new-homepage left">
+          <div class="new-badge-placeholder">+</div>
+          <h2>Create a New Badge</h2>
+          <a class="btn blank-btn blank-btn-homepage js-login">Start</a>
+        </section>
+        <section class="or-seperator left">
+          <span class="or">or</span>
+        </section>
+        <section class="badge-template left">
+          <div class="badgethumb js-badgethumb" data-image="url('{{ static('images/badge-template-1.png') }}')"></div>
+          <h2>Template</h2>
+          <p class="small-copy">Status: Template</p>
+          <a class="btn view-btn js-login">View</a>
+        </section>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts -%}
+  {{ super() }}
+  <script src="{{ static('/js/home.js') }}"></script>
+  <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js" type="text/javascript"></script>
+{%- endblock %}

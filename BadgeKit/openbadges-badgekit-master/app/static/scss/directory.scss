@@ -1,0 +1,41 @@
+@import "base";
+
+.badgeinfo {
+  position: relative;
+  width: 25%;
+  float: left;
+  text-align: center;
+  height: 300px;
+  line-height: 50%;
+}
+
+.directoryheader {
+  text-align: center;
+}
+
+.pagenav {
+  text-align: center;
+}
+
+.addbadge {
+  text-align: center;
+}
+
+.action-dropdown {
+  display: none;
+  position: absolute;
+  background: $dark-gray;
+  margin: 0;
+  z-index: 5;
+  padding: 10px 0;
+  width: 49.3%;
+  @include transition;
+  li, input {
+    color: $white;
+    font-size: 13px;
+    padding: 5px 19px;
+    &:hover { background-color: $hover-gray; }
+  }
+}
+
+
